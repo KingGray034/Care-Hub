@@ -4,8 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CareHub Homepage</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    
+    <!-- Header/Navbar -->
+    <header class="main-header">
+        <div class="container" id="header-container">
+            <a href="index.html"><img src="" alt="Care-Hub-Logo"></a>
+            <ul class="nav-list">
+                <li>
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li>
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                </li>
+                <li>
+                    <a href="caregivers.html" class="nav-link">Caregivers</a>
+                </li>
+                <li>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                </li>
+                <li>
+                    <a href="login.html" id="nav-log-in" class="nav-link">Sign Up/Log In</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <div class="container" id="hero-section">
+        <h1 class="hero-text" id="hero-main-text">Welcome to Carehub</h1>
+        <p class="hero-text" id="hero-sub-text">Your one-stop shop for all your caregiving needs</p>
+        <div class="hero-search-bar">
+            <input type="text" id="search-bar" placeholder="What services can we offer you today?">
+            <a href="login.html" class="cta-button" id="hero-signup">Get Started</a>
+        </div>
+    </div>
+    <!-- Services Section -->
+    <div class="container" id="services-section">
+        <h2 class="section-header">Our Services</h2>
+        <div class="service-card">
+            <i class="fa-solid fa-house-user"></i>
+            <h3 class="service-title">Home Care</h3>
+            <p class="service-description">Our employees offer a variety of home care, from cleaning services etc</p>
+        </div>
+        <div class="service-card">
+            <i class="fa-solid fa-hands-holding-child"></i>
+            <h3 class="service-title">Child Care</h3>
+            <p class="service-description">Our employees offer a variety of child care services, from babysitting to tutoring</p>
+        </div>
+        <div class="service-card">
+            <i class="fa-solid fa-user-nurse"></i>
+            <h3 class="service-title">Elderly Care</h3>
+            <p class="service-description">Our employees offer a variety of elderly care services, from companionship to medical care</p>
+        </div>
+        <div class="service-card">
+            <i class="fa-solid fa-paw"></i>
+            <h3 class="service-title">Pet Care</h3>
+            <p class="service-description">Our employees offer a variety of pet care services, from dog walking to pet sitting</p>
+        </div>
+    </div>
 </body>
 </html>
