@@ -6,6 +6,7 @@
     <title>CareHub Homepage</title>
     <link rel="stylesheet" href="homepage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="homepage.js" defer></script>
 </head>
 <body>
     <!-- Header/Navbar -->
@@ -32,37 +33,155 @@
         </div>
     </header>
     <!-- Hero Section -->
-    <div class="container" id="hero-section">
-        <h1 class="hero-text" id="hero-main-text">Welcome to Carehub</h1>
-        <p class="hero-text" id="hero-sub-text">Your one-stop shop for all your caregiving needs</p>
+    <div class="container hero-section">
+        <div class="carousel">
+            <div class="carousel-overlay"></div>
+            <div class="carousel-item active">
+                <img src="Images/Man tutoring child.jpg" alt="Hero Background 1" width="200px">
+                <div class="carousel-caption">
+                    <h1 class="hero-text">Welcome to CareHub</h1>
+                    <p class="hero-text hero-description">Your one-stop shop for all your care needs</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Images/Man in overall cleaning glass.jpg" alt="Hero Background 2" width="200px">
+                <div class="carousel-caption">
+                    <h1 class="hero-text">Professional Home Care</h1>
+                    <p class="hero-text hero-description">Our employees offer a variety of home care services</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Images/Black woman cleaning babies mouth.jpg" alt="Hero Background 3" width="200px">
+                <div class="carousel-caption">
+                    <h1 class="hero-text">Child Care</h1>
+                    <p class="hero-text hero-description">Our employees offer a variety of child care services</p>
+                </div>
+            </div>
+        </div>
         <div class="hero-search-bar">
-            <input type="text" id="search-bar" placeholder="What services can we offer you today?">
-            <a href="login.html" class="cta-button" id="hero-signup">Get Started</a>
+            <input type="text" id="hero-search-bar" placeholder="What services can we help you with?">
+            <a href="login.html" class="cta-button" id="hero-cta">Get Started</a>
         </div>
     </div>
+    <!-- About Us Section -->
+     <div class="container" id="about-section">
+        <h2 class="section-header">About Us</h2>
+        <p class="about-text">Carehub is dedicated to providing top-notch caregiving services for your loved ones. Whether it's home care, child care, elderly care, or pet care, our team of professionals is here to help. Our mission is to deliver compassionate and personalized care to meet your unique needs.</p>
+     </div>
     <!-- Services Section -->
     <div class="container" id="services-section">
         <h2 class="section-header">Our Services</h2>
-        <div class="service-card">
-            <i class="fa-solid fa-house-user"></i>
-            <h3 class="service-title">Home Care</h3>
-            <p class="service-description">Our employees offer a variety of home care, from cleaning services etc</p>
+        <div class="service-wrapper">
+            <div class="service-image">
+                <img src="images/Man in overall holding broom.jpg" alt="Home Care" width="200px">
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-house-user"></i>
+                <h3 class="service-title">Home Care</h3>
+                <p class="service-description">Our employees offer a variety of home care, from cleaning services etc</p>
+            </div>
         </div>
-        <div class="service-card">
-            <i class="fa-solid fa-hands-holding-child"></i>
-            <h3 class="service-title">Child Care</h3>
-            <p class="service-description">Our employees offer a variety of child care services, from babysitting to tutoring</p>
+        <div class="service-wrapper">
+            <div class="service-card">
+                <i class="fa-solid fa-hands-holding-child"></i>
+                <h3 class="service-title">Child Care</h3>
+                <p class="service-description">Our employees offer a variety of child care services, from babysitting to tutoring</p>
+            </div>
+            <div class="service-image">
+                <img src="Images/Man reading to child.jpg" alt="Child Care" width="200px">
+            </div>
         </div>
-        <div class="service-card">
-            <i class="fa-solid fa-user-nurse"></i>
-            <h3 class="service-title">Elderly Care</h3>
-            <p class="service-description">Our employees offer a variety of elderly care services, from companionship to medical care</p>
+        <div class="service-wrapper">
+            <div class="service-image">
+                <img src="Images/Black woman putting black old man to sleep 2.jpg" alt="Elderly Care" width="200px">
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-user-nurse"></i>
+                <h3 class="service-title">Elderly Care</h3>
+                <p class="service-description">Our employees offer a variety of elderly care services, from companionship to medical care</p>
+            </div>
         </div>
-        <div class="service-card">
-            <i class="fa-solid fa-paw"></i>
-            <h3 class="service-title">Pet Care</h3>
-            <p class="service-description">Our employees offer a variety of pet care services, from dog walking to pet sitting</p>
+        <div class="service-wrapper">
+            <div class="service-card">
+                <i class="fa-solid fa-paw"></i>
+                <h3 class="service-title">Pet Care</h3>
+                <p class="service-description">Our employees offer a variety of pet care services, from dog walking to pet sitting</p>
+            </div>
+            <div class="service-image">
+                <img src="Images/Black woman with dog 2.jpg" alt="Pet Care" width="200px">
+            </div>
         </div>
     </div>
+    <!-- Features Section -->
+    <div class="container" id="features-section">
+        <h2 class="section-header">Why Chose Us</h2>
+        <div class="feature">
+            <i class="fa-solid fa-thumbs-up"></i>
+            <h3 class="feature-title">Trusted Professional</h3>
+            <p class="feature-description">Our employees are highly trained and experienced professionals who are dedicated to providing the best care for your loved ones</p>
+        </div>
+        <div class="feature">
+            <i class="fa-solid fa-clock"></i>
+            <h3 class="feature-title">24/7 Availability</h3>
+            <p class="feature-description">We are available 24/7 to provide care for your loved ones whenever you need it</p>
+        </div>
+        <div class="feature">
+            <i class="fa-solid fa-heart"></i>
+            <h3 class="feature-title">Compassionate Care</h3>
+            <p class="feature-description">We provide compassionate and personalized care to meet your unique needs</p>
+        </div>
+    </div>
+    <!-- Testimonial Section -->
+    <div class="container" id="testimonials-section">
+        <h2 class="section-header">What Our Clients Say</h2>
+        <div class="testimonial">
+            <p class="testimonial-text">"CareHub provided exceptional home care for my elderly mother. The caregivers were compassionate and professional."</p>
+            <p class="testimonial-author">- Okechukwu Daniel</p>            
+        </div>
+        <div class="testimonial">
+            <p class="testimonial-text">"CareHub provided excellent child care for my daughter. The caregiver was friendly and reliable."</p>
+            <p class="testimonial-author">- Chidinma Nwosu</p>
+        </div>
+        <div class="testimonial">
+            <p class="testimonial-text">"CareHub provided outstanding pet care for my dog. The caregiver was caring and attentive."</p>
+            <p class="testimonial-author">- Chukwuebuka Nwosu</p>
+        </div>
+    </div>
+    <!-- Contact Section -->
+    <div class="container" id="contact-section">
+        <h2 class="section-header">Contact Us</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </div>
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 CareHub. All rights reserved.</p>
+            <ul class="footer-nav">
+                <li>
+                    <a href="privacy.html" class="nav-link">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="terms.html" class="nav-link">Terms of Service</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
